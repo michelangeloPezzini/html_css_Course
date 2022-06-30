@@ -1,0 +1,27 @@
+img {
+  width: 100%;
+  display: block;
+}
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /*Espaçamento*/
+}
+
+h1 {
+  grid-column: 1 /-1;
+}
+
+/*max-width = abaixo de*/
+/*min-width = acima de*/
+@media (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    background-color: rgb(77, 69, 69);
+  }
+}
